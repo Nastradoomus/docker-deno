@@ -1,0 +1,26 @@
+version: "3"
+
+networks:
+  backend:
+
+services:
+
+  app:
+    image: "torgie/deno.land:latest"
+    domainname: "local"
+    hostname: "deno"
+    environment:
+      VIRTUAL_HOST: "deno.local"
+    networks:
+      - backend
+    depends_on:
+      - nginx
+
+  nginx:
+    image: "jwilder/nginx-proxy"
+    ports:
+      - "80:80"
+    volumes:
+      - "/var/run/docker.sock:/tmp/docker.sock:ro"
+    networks:
+      - backend
