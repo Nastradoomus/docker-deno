@@ -25,7 +25,7 @@ RUN mkdir /app \
 USER deno
 
 # Install and clean up the deno binary
-RUN curl -fsSL https://deno.land/x/install/install.sh | sh -s v1.1.3
+RUN curl -fsSL https://deno.land/x/install/install.sh | sh -s v1.2.0
 
 # Copy in the entrypoint script and set it
 COPY examples/server.js /app/server.js
