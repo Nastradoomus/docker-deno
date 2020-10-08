@@ -1,12 +1,12 @@
 # Deno Docker Image
-A tiny, Ubuntu-based Deno image. It spawns a "hello world" webserver.
+A tiny, Alpine-based Deno image. It spawns a "hello world" webserver.
 
 ## Running
 
 To run, execute `./start.sh`. This will start a `docker-compose` service stack containing:
  * `app`: A simple Deno HTTP server that outputs "Hello World!"
  * `nginx`: The *extremely* popular Nginx reverse proxy that sits in front of the Deno server
- 
+
 ## Implementation
 
 This app, out of the box, will assume that you're running the server at the URL `https://deno.local`.
