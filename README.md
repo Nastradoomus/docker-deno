@@ -38,6 +38,9 @@ docker run --rm --name deno \
   torgie/deno.land:latest \
   deno run myScript.js
 ```
+
+### Note: this lives in helppoelama/deno:latest so replace torgie/deno.land:latest with it.
+
 And to stop it:
 ```
 docker stop deno
