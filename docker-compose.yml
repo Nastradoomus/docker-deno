@@ -4,9 +4,8 @@ networks:
   backend:
 
 services:
-
   app:
-    image: "torgie/deno.land:latest"
+    image: "helppoelama/deno:latest"
     domainname: "local"
     hostname: "deno"
     environment:
