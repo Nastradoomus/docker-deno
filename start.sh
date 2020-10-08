@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/ash
 
 COMPOSE="docker-compose -p deno"
 

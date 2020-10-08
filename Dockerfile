@@ -43,5 +43,5 @@ EXPOSE 8000
 WORKDIR $HOME/app
 
 # Comment out ENTRYPOINT if you want to run deno straight with docker.
-#CMD ["deno", "run", "--allow-net", "server.js"]
-ENTRYPOINT ["/usr/bin/fish"]
+CMD ["deno", "run", "--allow-net", "server.js"]
+#ENTRYPOINT ["/usr/bin/fish"]
